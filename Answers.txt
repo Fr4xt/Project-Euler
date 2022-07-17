@@ -4,3 +4,4 @@ All code used to compute the answers can be found at the following GitHub reposi
 https://github.com/Fr4xt/Project-Euler
 
 Problem 001: 233168
+Problem 002: 4613732
