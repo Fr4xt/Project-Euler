@@ -5,8 +5,8 @@
 # the product of two 3-digit numbers.
 
 # The product of two 3-digit numbers can at most be 6 digits. This means, that we are
-# looking for a 6-digit palindrome. If we consider a, b and c to be base-10 digits, then
-# such a palindrome will have the following symmetry: "abccba". Generalizing this to the
+# looking for a 6-digit palindrome. If let a, b and c be base-10 digits, then such a
+# palindrome will have the following symmetry: "abccba". Generalizing this to the
 # base-10 system, the palindrome (n) must satisfy the following equation:
 # n=a(10^5+10^0)+b(10^4+10^1)+c(10^3+10^2) or n=100001a+10010b+1100c for all natural
 # values of a, b and c in the interval from 0 to 9. The palindromes will decrease in
