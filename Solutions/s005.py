@@ -22,7 +22,7 @@ import math  # Needed for logarithms
 n = 20
 
 
-def isPrime(p):  # Verifies whether a factor is prime or not
+def isPrime(p):  # Finds all prime numbers below n
     if p == 2:  # Needed since the for loop starts at 2
         return 1
 
