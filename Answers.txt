@@ -5,3 +5,4 @@ https://github.com/Fr4xt/Project-Euler
 
 Problem 001: 233168
 Problem 002: 4613732
+Problem 004: 906609
