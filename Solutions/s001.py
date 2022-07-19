@@ -5,7 +5,7 @@
 # below 1000.
 
 # One could likely calculate this using some clever modification of the Gauss formula
-# (n(n+1)*1/2), but seeing as a simple for loop can compute this sum in less than a
+# (n(n+1)/2), but seeing as a simple for loop can compute this sum in less than a
 # second this approach will be utilized instead.
 
 sum = 0
