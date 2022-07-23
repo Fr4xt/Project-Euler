@@ -21,9 +21,9 @@ n = 10001
 def isPrime(p, primes):  # Checks wether p is divisible by any prime in the list
     for i in range(len(primes)):
         if p % primes[i] == 0:
-            return 0
+            return False
 
-    return 1
+    return True
 
 
 def compute():  # Computes the nth prime number
@@ -37,7 +37,7 @@ def compute():  # Computes the nth prime number
             primes.append(p)
             continue
 
-        if isPrime(p, primes) == 1:
+        if isPrime(p, primes):
             primes.append(p)
 
     return primes[-1]  # primes[-1] fetches latest (and therefore largest) element
