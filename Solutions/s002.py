@@ -9,14 +9,23 @@
 # the Fibonacci sequence ((Φ^n-(1-Φ)^n)/2). But once again seeing as a simple for loop
 # can compute this sum in no time this approach will be utilized instead
 
-fibonacci = [0, 1]  # Defining the starting conditions for the fibonacci sequence
-sum = 0
+n = 4000000
 
-i = 0
-while fibonacci[-1] < 4000000:  # fibonacci[-1] fetches most recent element
-    fibonacci.append(fibonacci[i] + fibonacci[-1])
-    if fibonacci[-1] % 2 == 0:  # fibonacci[-1] is now different due to append
-        sum = sum + fibonacci[-1]
-    i = i + 1
 
-print(sum)
+def compute():
+    fibonacci = [0, 1]  # Defining the starting conditions for the fibonacci sequence
+    sum = 0
+
+    i = 0
+    while fibonacci[-1] < n:  # fibonacci[-1] fetches most recent element
+        fibonacci.append(fibonacci[i] + fibonacci[-1])
+
+        if fibonacci[-1] % 2 == 0:  # fibonacci[-1] is now different due to append
+            sum = sum + fibonacci[-1]
+
+        i = i + 1
+
+    return sum
+
+
+print(compute())

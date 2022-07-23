@@ -20,9 +20,9 @@
 n = 100
 
 
-def compute(n):
+def compute():
     sumSquareDiff = n * (3 * n + 2) * (n + 1) * (n - 1) / 12
     return sumSquareDiff
 
 
-print(compute(n))
+print(compute())

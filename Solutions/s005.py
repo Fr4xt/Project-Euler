@@ -32,12 +32,12 @@ def isPrime(p):  # Finds all prime numbers below n
     return 1
 
 
-def compute(n):  # Finds the value of m (see description)
+def compute():  # Finds the value of m (see description)
     product = 1
     for p in range(2, n + 1):
         if isPrime(p) == 1:
-            product = product * pow(p, math.trunc(math.log(n, p)))
+            product = product * p ** math.trunc(math.log(n, p))
     return product
 
 
-print(compute(n))
+print(compute())

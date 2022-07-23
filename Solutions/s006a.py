@@ -14,7 +14,7 @@
 n = 100
 
 
-def sumOfSquares(n):  # Computing the sum of all squares between 0 and n
+def sumOfSquares():  # Computing the sum of all squares between 0 and n
     sum = 0
     for i in range(n + 1):
         sum = sum + i * i
@@ -22,7 +22,7 @@ def sumOfSquares(n):  # Computing the sum of all squares between 0 and n
     return sum
 
 
-def squareOfSum(n):  # Computing the square of the sum of all numbers between 0 and n
+def squareOfSum():  # Computing the square of the sum of all numbers between 0 and n
     sum = 0
     for i in range(n + 1):
         sum = sum + i
@@ -31,9 +31,9 @@ def squareOfSum(n):  # Computing the square of the sum of all numbers between 0 
     return sum
 
 
-def compute(n):  # Computing the difference between the two sums and thus the answer
-    sumSquareDiff = squareOfSum(n) - sumOfSquares(n)
+def compute():  # Computing the difference between the two sums and thus the answer
+    sumSquareDiff = squareOfSum() - sumOfSquares()
     return sumSquareDiff
 
 
-print(compute(n))
+print(compute())

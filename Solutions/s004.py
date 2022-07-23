@@ -13,6 +13,7 @@
 # size as we let c then b and then a decrease in size systematically, allowing us to
 # exhaustively find the largest 6-digit palindrome which is also the product of two
 # 3-digit numbers using a loop.
+
 def compute():
     a = 9
     b = 9
@@ -23,7 +24,7 @@ def compute():
 
         for i in range(100, 1000):
             if n % i == 0 and n / i < 1000:  # Checking for two 3-digit divisors
-                return (n)
+                return n
 
         if c > 0:  # Decreasing size of next palindrome systematically (see description)
             c = c - 1
